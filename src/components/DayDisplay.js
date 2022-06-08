@@ -7,9 +7,6 @@ export default function DayDisplay({ dailyData, idx }) {
     <div style={{ display: "table-cell" }}>
       <span style={{ color: "blue", fontWeight: "bold" }} id="day">
         {moment(dailyData.datetime).format("dddd")}
-        {/* {dailyData?.datetime == moment(dailyData.dailyData).calendar()
-          ? "Today"
-          : dailyData?.datetime} */}
       </span>
       <br />
       <div className="container">

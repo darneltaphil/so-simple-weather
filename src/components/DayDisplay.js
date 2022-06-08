@@ -14,6 +14,7 @@ export default function DayDisplay({ dailyData, idx }) {
           <img
             src={`https://www.weatherbit.io/static/img/icons/${dailyData.weather.icon}.png`}
             width="25%"
+            alt="icon"
           />
         </span>
         <small style={{ marginRight: "5px" }} id="icon">

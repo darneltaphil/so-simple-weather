@@ -12,7 +12,7 @@ function App() {
     };
 
     fetch(
-      `https://api.weatherbit.io/v2.0/forecast/daily?city=${weatherTown}&key=38ff7a5f9aa44a4fb8a39690b036d5cb`,
+      `https://api.weatherbit.io/v2.0/forecast/daily?city=${weatherTown}&key=${process.env.REACT_APP_API_KEY}`,
       requestOptions
     )
       .then((response) => response.json())
